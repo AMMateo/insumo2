@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
+import { PaginaPageRoutingModule } from './pagina-routing.module';
+import { PaginaPage } from './pagina.page';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    PaginaPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [PaginaPage, NavBarComponent]
 })
-export class HomePageModule {}
+export class PaginaPageModule {}

@@ -1,3 +1,22 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Información</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-user-card userName="User 1 " profileImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjIOYW-U2QDZiuqrcDhUxMLkhc_3DK-TqaaO3RQUaNg&s.png" additionalInfo="Información 1"></app-user-card>
+  <app-user-card userName="User 2" profileImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjIOYW-U2QDZiuqrcDhUxMLkhc_3DK-TqaaO3RQUaNg&s.png" additionalInfo="Información 2"></app-user-card>
+  <ion-list>
+    <app-color-list *ngFor="let color of colores" [color]="color"></app-color-list>
+  </ion-list>
+</ion-content>
+
+<ion-content>
+  <ion-list>
+    <app-color-list *ngFor="let color of colores" [color]="color"></app-color-list>
+  </ion-list>
+</ion-content>
+
